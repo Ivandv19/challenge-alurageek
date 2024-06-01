@@ -1,0 +1,355 @@
+header {
+
+    .header__contenido {
+        width: 100%;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        background-color: #5300C8;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo {
+        font-family: 'Press Start 2P', cursive;
+        color: #E5E5E5;
+        font-size: 24px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+}
+
+
+main {
+
+    width: 100%;
+    height: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .main__contenido {
+
+        display: flex;
+        flex-direction: row;
+        padding: 60px 40px 60px 40px;
+        gap: 70px;
+    }
+
+    .productos {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .productos h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .productos__container-shadows {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
+        /* Añadir sombra */
+    }
+
+    .productos__container {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        padding: 15px;
+        gap: 115px;
+        overflow: auto;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .productos__line {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0 0 10px 0;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .producto__card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 196px;
+        height: 258px;
+        border-radius: 10px;
+        border: 3px solid black;
+        padding: 10px;
+        gap: 10px;
+        background-color: #5D04D9;
+        box-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+
+
+    }
+
+    .producto__card p {
+        color: #E5E5E5;
+
+    }
+
+    .producto__precio__y__borrar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .borrar__container {
+        display: flex;
+        position: relative;
+
+    }
+
+    .btn__borrar {
+        position: absolute;
+        width: 3vh;
+        height: 3vh;
+      
+    }
+
+
+    .agregar__productos {
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .formulario {
+        display: flex;
+        width: 100%;
+        height: 517px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 40px;
+    }
+
+    .formulario h1 {
+        font-family: 'Press Start 2P', cursive;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .formulario__campo {
+        position: relative;
+        color: #03318C;
+        width: 392px;
+        height: 58px;
+        border-radius: 50px;
+        border: 3px solid #03318c;
+        outline: none;
+
+
+    }
+
+    input::placeholder {
+        position: relative;
+        color: #03318C;
+        /* Color del texto del placeholder */
+        line-height: 20.8px;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 600;
+        font-style: normal;
+
+    }
+
+    .input__nombre {
+        position: relative;
+        width: 203.08px;
+        height: 39px;
+        top: 10px;
+        left: 14.15px;
+
+    }
+
+    .input__precio {
+        position: relative;
+        width: 203.08px;
+        height: 39px;
+        top: 10px;
+        left: 14.15px;
+
+    }
+
+    .input__img {
+        position: relative;
+        width: 203.08px;
+        height: 39px;
+        top: 10px;
+        left: 14.15px;
+
+
+    }
+
+    .botones {
+        display: flex;
+        justify-content: space-around;
+        width: 392px;
+        height: 55px;
+        gap: 13px;
+    }
+
+    .boton__enviar {
+        width: 188px;
+        height: 55px;
+        border-radius: 15px;
+        background-color: #03318c;
+        color: white;
+        border: 3px solid;
+        outline: none;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+
+    }
+
+    .boton__limpiar {
+        color: #03318C;
+        width: 188px;
+        height: 55px;
+        border-radius: 15px;
+        border: 3px solid #03318c;
+        outline: none;
+        font-family: "IBM Plex Mono", monospace;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
+
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5300C8;
+    padding: 64px 0;
+
+    .footer__contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .titulo {
+        font-family: 'Press Start 2P';
+        color: #E5E5E5;
+        font-size: 24px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    .creditos {
+        color: #E5E5E5;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+    }
+
+    .creditos2 {
+        color: #E5E5E5;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+    }
+}
+
+
+/* Estilos para dispositivos pequeños (teléfonos) */
+@media only screen and (max-width: 600px) {
+
+    main {
+        .main__contenido {
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 60px 40px 60px 40px;
+            gap: 70px;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .productos {
+            width: 100%;
+        }
+
+        .agregar__productos {
+            width: 100%;
+        }
+
+        .formulario {
+            width: 100%;
+        }
+
+        .formulario__campo {
+            width: 100%;
+        }
+
+        .botones {
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+
+        .boton__enviar {
+            width: 50%;
+
+        }
+
+        .boton__limpiar {
+            width: 50%;
+
+        }
+
+
+    }
+}
