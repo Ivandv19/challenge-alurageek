@@ -2,19 +2,22 @@
 <html lang="es">
 
 <head>
+    <!-- Configuración básica del documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
 
+    <!-- Enlaces a archivos de estilo -->
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Press+Start+2P&display=swap"
+    <!-- Enlace a fuentes externas -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <!-- Encabezado de la página -->
     <header>
         <div class="header__contenido">
             <div class="logo">
@@ -24,8 +27,10 @@
         </div>
     </header>
 
+    <!-- Contenido principal -->
     <main>
         <div class="main__contenido">
+            <!-- Sección de productos -->
             <section class="productos">
                 <h1 class="productos__titulo">MIS PRODUCTOS:</h1>
                 <div class="productos__container-shadows">
@@ -35,6 +40,7 @@
                 </div>
             </section>
 
+            <!-- Sección para agregar productos -->
             <section class="agregar__productos">
                 <form class="formulario" data-formulario>
                     <h1 class="titulo2">AGREGAR PRODUCTO:</h1>
@@ -62,6 +68,7 @@
         </div>
     </main>
 
+    <!-- Pie de página -->
     <footer>
         <div class="footer__contenido">
             <div class="logo">
@@ -73,9 +80,11 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script type="module" src="/js/conexionAPI.js"></script>
     <script type="module" src="/js/mostrarProductos.js"></script>
     <script type="module" src="/js/crearProductos.js"></script>
+    <!-- Script para cargar módulo eliminarProducto.js -->
     <script type="module">
         document.addEventListener('DOMContentLoaded', function () {
             import('/js/eliminarProducto.js').then(module => {

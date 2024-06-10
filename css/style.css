@@ -1,5 +1,6 @@
+/* Estilos para el encabezado */
 header {
-
+    /* Contenedor del encabezado */
     .header__contenido {
         width: 100%;
         height: 96px;
@@ -10,6 +11,7 @@ header {
         background-color: #5300C8;
     }
 
+    /* Estilos para el logotipo */
     .logo {
         display: flex;
         flex-direction: row;
@@ -17,6 +19,7 @@ header {
         justify-content: center;
     }
 
+    /* Estilos para el título */
     .titulo {
         font-family: 'Press Start 2P', cursive;
         color: #E5E5E5;
@@ -24,26 +27,25 @@ header {
         line-height: 16px;
         font-weight: 400;
     }
-
 }
 
-
+/* Estilos para el contenido principal */
 main {
-
     width: 100%;
     height: auto;
     flex: 1;
     display: flex;
     flex-direction: column;
 
+    /* Contenedor del contenido principal */
     .main__contenido {
-
         display: flex;
         flex-direction: row;
         padding: 60px 40px 60px 40px;
         gap: 70px;
     }
 
+    /* Sección de productos */
     .productos {
         width: 50%;
         display: flex;
@@ -52,9 +54,9 @@ main {
         gap: 40px;
         align-items: center;
         justify-content: center;
-
     }
 
+    /* Título de la sección de productos */
     .productos h1 {
         font-family: 'Press Start 2P', cursive;
         font-weight: 400;
@@ -63,14 +65,15 @@ main {
         text-align: center;
     }
 
+    /* Contenedor de las tarjetas de productos */
     .productos__container-shadows {
         width: 100%;
         height: 100%;
         display: flex;
         box-shadow: -12px 10px 5.8px rgba(0, 0, 0, 0.25);
-        /* Añadir sombra */
     }
 
+    /* Contenedor de productos */
     .productos__container {
         width: 100%;
         height: 50vh;
@@ -82,6 +85,7 @@ main {
         justify-content: space-around;
     }
 
+    /* Línea de productos */
     .productos__line {
         width: 100%;
         display: flex;
@@ -92,6 +96,7 @@ main {
         flex-wrap: wrap;
     }
 
+    /* Tarjeta de producto */
     .producto__card {
         display: flex;
         flex-direction: column;
@@ -104,16 +109,14 @@ main {
         gap: 10px;
         background-color: #5D04D9;
         box-shadow: -5px 6px 3.3px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-
-
     }
 
+    /* Texto dentro de la tarjeta de producto */
     .producto__card p {
         color: #E5E5E5;
-
     }
 
+    /* Contenedor de precio y botón de borrar */
     .producto__precio__y__borrar {
         display: flex;
         flex-direction: row;
@@ -121,20 +124,20 @@ main {
         align-items: center;
     }
 
+    /* Contenedor del botón de borrar */
     .borrar__container {
         display: flex;
         position: relative;
-
     }
 
+    /* Botón de borrar */
     .btn__borrar {
         position: absolute;
         width: 3vh;
         height: 3vh;
-      
     }
 
-
+    /* Sección para agregar productos */
     .agregar__productos {
         width: 50%;
         height: 50vh;
@@ -146,6 +149,7 @@ main {
         gap: 40px;
     }
 
+    /* Formulario de agregar productos */
     .formulario {
         display: flex;
         width: 100%;
@@ -157,6 +161,7 @@ main {
         gap: 40px;
     }
 
+    /* Título del formulario */
     .formulario h1 {
         font-family: 'Press Start 2P', cursive;
         font-weight: 400;
@@ -165,6 +170,7 @@ main {
         text-align: center;
     }
 
+    /* Campo del formulario */
     .formulario__campo {
         position: relative;
         color: #03318C;
@@ -173,49 +179,30 @@ main {
         border-radius: 50px;
         border: 3px solid #03318c;
         outline: none;
-
-
     }
 
+    /* Placeholder del input */
     input::placeholder {
         position: relative;
         color: #03318C;
-        /* Color del texto del placeholder */
         line-height: 20.8px;
         font-family: "IBM Plex Mono", monospace;
         font-weight: 600;
         font-style: normal;
-
     }
 
-    .input__nombre {
-        position: relative;
-        width: 203.08px;
-        height: 39px;
-        top: 10px;
-        left: 14.15px;
-
-    }
-
-    .input__precio {
-        position: relative;
-        width: 203.08px;
-        height: 39px;
-        top: 10px;
-        left: 14.15px;
-
-    }
-
+    /* Estilos de los inputs */
+    .input__nombre,
+    .input__precio,
     .input__img {
         position: relative;
         width: 203.08px;
         height: 39px;
         top: 10px;
         left: 14.15px;
-
-
     }
 
+    /* Contenedor de los botones */
     .botones {
         display: flex;
         justify-content: space-around;
@@ -224,6 +211,7 @@ main {
         gap: 13px;
     }
 
+    /* Botón de enviar */
     .boton__enviar {
         width: 188px;
         height: 55px;
@@ -235,9 +223,9 @@ main {
         font-family: "IBM Plex Mono", monospace;
         font-weight: 500;
         font-style: normal;
-
     }
 
+    /* Botón de limpiar */
     .boton__limpiar {
         color: #03318C;
         width: 188px;
@@ -251,105 +239,112 @@ main {
     }
 }
 
-
 footer {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #5300C8;
-    padding: 64px 0;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: flex; /* Muestra los elementos como una fila */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+    background-color: #5300C8; /* Color de fondo */
+    padding: 64px 0; /* Espaciado interior (arriba y abajo) */
+}
 
-    .footer__contenido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+/* Contenido del footer */
+.footer__contenido {
+    display: flex; /* Muestra los elementos como una fila */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+}
 
-    .logo {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
+/* Logo en el footer */
+.logo {
+    display: flex; /* Muestra los elementos como una fila */
+    flex-direction: row; /* Alinea los elementos en una fila */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Alinea horizontalmente los elementos al centro */
+}
 
-    .titulo {
-        font-family: 'Press Start 2P';
-        color: #E5E5E5;
-        font-size: 24px;
-        line-height: 16px;
-        font-weight: 400;
-    }
+/* Título en el footer */
+.titulo {
+    font-family: 'Press Start 2P'; /* Fuente del texto */
+    color: #E5E5E5; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    line-height: 16px; /* Altura de línea */
+    font-weight: 400; /* Grosor del texto */
+}
 
-    .creditos {
-        color: #E5E5E5;
-        font-family: 'IBM Plex Mono', monospace;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        text-align: center;
-    }
+/* Créditos en el footer */
+.creditos {
+    color: #E5E5E5; /* Color del texto */
+    font-family: 'IBM Plex Mono', monospace; /* Fuente del texto */
+    font-weight: 400; /* Grosor del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 16px; /* Altura de línea */
+    text-align: center; /* Alinea el texto al centro */
+}
 
-    .creditos2 {
-        color: #E5E5E5;
-        font-family: 'IBM Plex Mono', monospace;
-        font-weight: 200;
-        font-size: 16px;
-        line-height: 16px;
-        text-align: center;
-    }
+/* Créditos adicionales en el footer */
+.creditos2 {
+    color: #E5E5E5; /* Color del texto */
+    font-family: 'IBM Plex Mono', monospace; /* Fuente del texto */
+    font-weight: 200; /* Grosor del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    line-height: 16px; /* Altura de línea */
+    text-align: center; /* Alinea el texto al centro */
 }
 
 
 /* Estilos para dispositivos pequeños (teléfonos) */
 @media only screen and (max-width: 600px) {
-
     main {
+        /* Contenido principal en dispositivos pequeños */
         .main__contenido {
             display: flex;
-            flex-direction: column-reverse;
-            padding: 60px 40px 60px 40px;
-            gap: 70px;
-            flex-wrap: nowrap;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column-reverse; /* Reordena los elementos */
+            padding: 60px 40px 60px 40px; /* Ajusta el relleno */
+            gap: 70px; /* Espacio entre elementos */
+            flex-wrap: nowrap; /* No permite que los elementos se envuelvan */
+            align-content: center; /* Alinea el contenido verticalmente */
+            justify-content: center; /* Alinea el contenido horizontalmente */
+            align-items: center; /* Alinea los elementos en el centro */
         }
 
+        /* Sección de productos en dispositivos pequeños */
         .productos {
-            width: 100%;
+            width: 100%; /* Ocupa todo el ancho disponible */
         }
 
+        /* Sección para agregar productos en dispositivos pequeños */
         .agregar__productos {
-            width: 100%;
+            width: 100%; /* Ocupa todo el ancho disponible */
         }
 
+        /* Formulario en dispositivos pequeños */
         .formulario {
-            width: 100%;
+            width: 100%; /* Ocupa todo el ancho disponible */
         }
 
+        /* Campo del formulario en dispositivos pequeños */
         .formulario__campo {
-            width: 100%;
+            width: 100%; /* Ocupa todo el ancho disponible */
         }
 
+        /* Contenedor de los botones en dispositivos pequeños */
         .botones {
-            width: 100%;
-            height: auto;
-            display: flex;
+            width: 100%; /* Ocupa todo el ancho disponible */
+            height: auto; /* Ajusta la altura automáticamente */
+            display: flex; /* Muestra los botones en una fila */
         }
 
+        /* Botón de enviar en dispositivos pequeños */
         .boton__enviar {
-            width: 50%;
-
+            width: 50%; /* Ocupa la mitad del ancho disponible */
         }
 
+        /* Botón de limpiar en dispositivos pequeños */
         .boton__limpiar {
-            width: 50%;
-
+            width: 50%; /* Ocupa la mitad del ancho disponible */
         }
-
-
     }
 }
