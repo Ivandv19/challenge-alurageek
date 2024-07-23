@@ -24,8 +24,10 @@ header {
         font-family: 'Press Start 2P', cursive;
         color: #E5E5E5;
         font-size: 24px;
-        line-height: 16px;
+      
         font-weight: 400;
+        width: auto;
+        height: auto;
     }
 }
 
@@ -246,10 +248,9 @@ footer {
     align-items: center; /* Alinea verticalmente los elementos al centro */
     justify-content: center; /* Alinea horizontalmente los elementos al centro */
     background-color: #5300C8; /* Color de fondo */
-    padding: 64px 0; /* Espaciado interior (arriba y abajo) */
-}
+    padding: 30px 0; /* Espaciado interior (arriba y abajo) */
 
-/* Contenido del footer */
+    /* Contenido del footer */
 .footer__contenido {
     display: flex; /* Muestra los elementos como una fila */
     flex-direction: column; /* Alinea los elementos en una columna */
@@ -280,7 +281,6 @@ footer {
     font-family: 'IBM Plex Mono', monospace; /* Fuente del texto */
     font-weight: 400; /* Grosor del texto */
     font-size: 16px; /* Tamaño de fuente */
-    line-height: 16px; /* Altura de línea */
     text-align: center; /* Alinea el texto al centro */
 }
 
@@ -294,9 +294,29 @@ footer {
     text-align: center; /* Alinea el texto al centro */
 }
 
+}
+
+
 
 /* Estilos para dispositivos pequeños (teléfonos) */
 @media only screen and (max-width: 600px) {
+
+    header{
+        display: flex;
+        width: 100%;
+        height: auto;
+        
+        .header__contenido{
+            width: 100%;
+            height: auto;
+            display: flex;
+        
+        }
+        .logo{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
     main {
         /* Contenido principal en dispositivos pequeños */
         .main__contenido {
@@ -346,5 +366,14 @@ footer {
         .boton__limpiar {
             width: 50%; /* Ocupa la mitad del ancho disponible */
         }
+    }
+
+    footer{
+        .logo{
+            display: flex;
+            flex-direction: column-reverse;
+
+        }
+
     }
 }
