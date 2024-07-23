@@ -43,6 +43,7 @@ Para configurar la conexión con la base de datos, sigue estos pasos:
 ```bash
 npx json-server --watch db.json --port 3001
 ```
+
 ## Créditos
 
 - Este proyecto fue desarrollado como parte de un ejercicio de desarrollo web.
@@ -54,3 +55,4 @@ npx json-server --watch db.json --port 3001
 # Despliegue
 
 El sitio web está desplegado en Vercel y se puede acceder a través del siguiente enlace: [AluraGeek](https://alura-geek-lake.vercel.app/).
+
