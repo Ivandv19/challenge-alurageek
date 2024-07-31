@@ -38,7 +38,7 @@ header {
 /* Estilos para el contenido principal */
 main {
     width: 100%;
-    height: auto;
+    height: 100vh;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -178,15 +178,15 @@ main {
 
     /* Campo del formulario */
     .formulario__campo {
-   
+
         color: #03318C;
         width: 392px;
         height: 58px;
         border-radius: 50px;
         border: 3px solid #03318c;
         outline: none;
-       
-  
+
+
     }
 
     /* Placeholder del input */
@@ -198,7 +198,7 @@ main {
         font-weight: 600;
         font-style: normal;
 
-     
+
     }
 
     /* Estilos de los inputs */
@@ -211,13 +211,14 @@ main {
         box-sizing: border-box;
         padding: 20px;
         background-color: transparent;
-  
-        
+
+
     }
 
     input:focus {
-        outline: none; /* Elimina el borde de enfoque */
-      }
+        outline: none;
+        /* Elimina el borde de enfoque */
+    }
 
     /* Contenedor de los botones */
     .botones {
@@ -333,8 +334,11 @@ footer {
     }
 
     main {
+       
+
         /* Contenido principal en dispositivos pequeños */
         .main__contenido {
+
             display: flex;
             flex-direction: column-reverse;
             padding: 120px 40px 60px 40px;
