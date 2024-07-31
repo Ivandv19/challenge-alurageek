@@ -178,15 +178,15 @@ main {
 
     /* Campo del formulario */
     .formulario__campo {
-
+   
         color: #03318C;
         width: 392px;
         height: 58px;
         border-radius: 50px;
         border: 3px solid #03318c;
         outline: none;
-
-
+       
+  
     }
 
     /* Placeholder del input */
@@ -198,7 +198,7 @@ main {
         font-weight: 600;
         font-style: normal;
 
-
+     
     }
 
     /* Estilos de los inputs */
@@ -211,14 +211,13 @@ main {
         box-sizing: border-box;
         padding: 20px;
         background-color: transparent;
-
-
+  
+        
     }
 
     input:focus {
-        outline: none;
-        /* Elimina el borde de enfoque */
-    }
+        outline: none; /* Elimina el borde de enfoque */
+      }
 
     /* Contenedor de los botones */
     .botones {
@@ -230,7 +229,7 @@ main {
     }
 
     /* Botón de enviar */
-    .boton__enviar {
+    .botón__enviar {
         width: 188px;
         height: 55px;
         border-radius: 15px;
@@ -244,7 +243,7 @@ main {
     }
 
     /* Botón de limpiar */
-    .boton__limpiar {
+    .botón__limpiar {
         color: #03318C;
         width: 188px;
         height: 55px;
@@ -291,7 +290,7 @@ footer {
     }
 
     /* Créditos en el footer */
-    .creditos {
+    .créditos {
         color: #E5E5E5;
         font-family: 'IBM Plex Mono', monospace;
         font-weight: 400;
@@ -300,7 +299,7 @@ footer {
     }
 
     /* Créditos adicionales en el footer */
-    .creditos2 {
+    .créditos2 {
         color: #E5E5E5;
         font-family: 'IBM Plex Mono', monospace;
         font-weight: 200;
@@ -334,11 +333,13 @@ footer {
     }
 
     main {
-       
-
+        width: 100%;
+        height: auto;
+  
         /* Contenido principal en dispositivos pequeños */
         .main__contenido {
-
+            width: 100%;
+            height: auto;
             display: flex;
             flex-direction: column-reverse;
             padding: 120px 40px 60px 40px;
@@ -347,6 +348,7 @@ footer {
             align-content: center;
             justify-content: center;
             align-items: center;
+            box-sizing: border-box;
         }
 
         /* Sección de productos en dispositivos pequeños */
@@ -384,13 +386,13 @@ footer {
         }
 
         /* Botón de enviar en dispositivos pequeños */
-        .boton__enviar {
+        .botón__enviar {
             width: 50%;
             /* Ocupa la mitad del ancho disponible */
         }
 
         /* Botón de limpiar en dispositivos pequeños */
-        .boton__limpiar {
+        .botón__limpiar {
             width: 50%;
             /* Ocupa la mitad del ancho disponible */
         }
