@@ -1,6 +1,13 @@
 /* Estilos para el encabezado */
 header {
-    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+
+
 
     /* Contenedor del encabezado */
     .header__contenido {
@@ -11,8 +18,7 @@ header {
         justify-content: center;
         padding: 20px 0;
         background-color: #5300c8;
-        position: fixed;
-        top: 0;
+
     }
 
     /* Estilos para el logotipo */
@@ -321,8 +327,6 @@ footer {
 @media only screen and (max-width: 599px) {
     header {
         display: flex;
-        width: 100%;
-        height: auto;
 
         .header__contenido {
             width: 100%;
