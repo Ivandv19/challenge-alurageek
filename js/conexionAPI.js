@@ -2,7 +2,7 @@
 async function listaProductos() {
   try {
     // Realiza una solicitud GET a la API para obtener la lista de productos
-    const conexion = await fetch('https://my-json-server.typicode.com/Ivanmx19/api_info_alurageek/productos');
+    const conexion = await fetch('https://my-json-server.typicode.com/IvandevI9/api_info_alurageek/productos');
     // Convierte la respuesta a formato JSON
     const conexionConvertida = await conexion.json();
     // Devuelve la lista de productos obtenida de la API
@@ -18,7 +18,7 @@ async function listaProductos() {
 async function creaProducto(id, nombre, precio, imagen) {
   try {
     // Realiza una solicitud POST a la API para crear un nuevo producto
-    const conexion = await fetch('https://my-json-server.typicode.com/Ivanmx19/api_info_alurageek/productos', {
+    const conexion = await fetch('https://my-json-server.typicode.com/IvandevI9/api_info_alurageek/productos', {
       method: 'POST',
       headers: { 'Content-type': 'application/json' },
       body: JSON.stringify({
@@ -49,7 +49,7 @@ async function creaProducto(id, nombre, precio, imagen) {
 async function eliminarProducto(id) {
   try {
     // Realiza una solicitud DELETE a la API para eliminar el producto con el ID especificado
-    const response = await fetch(`https://my-json-server.typicode.com/Ivanmx19/api_info_alurageek/productos/${id}`, {
+    const response = await fetch(`https://my-json-server.typicode.com/IvandevI9/api_info_alurageek/productos/${id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
