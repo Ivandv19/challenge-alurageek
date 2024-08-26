@@ -10,38 +10,32 @@ Este proyecto es una tienda en línea llamada AluraGeek. Permite a los usuarios 
 
 ## Uso
 
-1. Clona este repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador web.
-3. Explora los productos disponibles en la tienda.
-4. Para agregar un nuevo producto, completa el formulario en la sección "AGREGAR PRODUCTO".
-5. Para eliminar un producto existente, haz clic en el botón de eliminar junto al producto que deseas eliminar.
+1. **Visualización del Proyecto:** Instala el repositorio de manera local o visita el enlace desplegado en [Vercel](https://github.com/IvandevI9/challenge-alurageek.git).
+2. **Visualización de los prodcutos:** Explora los productos disponibles en la tienda.
+4. **Agregar producto:** Para agregar un nuevo producto, completa el formulario en la sección "AGREGAR PRODUCTO".
+5. **Eliminar producto:** Para eliminar un producto existente, haz clic en el botón de eliminar junto al producto que deseas eliminar.
 
 ## Tecnologías Utilizadas
 
-- HTML5
-- CSS3
-- JavaScript (ES6)
-- Google Fonts API
-- JSON
-- Node.js
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **My JSON Server**
+- **Node.js**
 
 ## Instalación
 
-1. Clona este repositorio en tu máquina local.
-2. Abre el archivo `index.html` en tu navegador web.
-
-## Base de Datos
-
-Este proyecto utiliza una base de datos para almacenar y gestionar la información sobre los productos disponibles en AluraGeek. La base de datos se utiliza para almacenar detalles como el nombre del producto y precio.
-
-### Configuración
-
-Para configurar la conexión con la base de datos, sigue estos pasos:
-
-1. Ejecuta el siguiente comando en tu terminal para iniciar el servidor JSON local:
-
+1. **Clonar el Repositorio:** Clona este repositorio en tu máquina local utilizando Git.
 ```bash
-npx json-server --watch db.json --port 3001
+   https://github.com/IvandevI9/challenge-alurageek.git
+```
+2. **Instalar Dependencias:** Navega al directorio del proyecto y ejecuta:
+```bash
+   npm install
+```
+3. **Iniciar el Proyecto:** Ejecuta el proyecto localmente con:
+```bash
+   npm start
 ```
 
 ## Créditos
