@@ -10,7 +10,7 @@ Este proyecto es una tienda en línea llamada AluraGeek. Permite a los usuarios 
 
 ## Uso
 
-1. **Visualización del Proyecto:** Instala el repositorio de manera local y abre el archivo `index.html` en tu navegador web o visita el enlace desplegado en [Vercel](https://alura-geek-lake.vercel.app/).
+1. **Visualización del Proyecto:** Para visualizar el proyecto, sigue los pasos que se encuentran en la sección [Instalación](#instalación) o visita el enlace desplegado en [Vercel](https://alura-geek-lake.vercel.app/).
 2. **Visualización de los prodcutos:** Explora los productos disponibles en la tienda.
 4. **Agregar producto:** Para agregar un nuevo producto, completa el formulario en la sección "AGREGAR PRODUCTO".
 5. **Eliminar producto:** Para eliminar un producto existente, haz clic en el botón de eliminar junto al producto que deseas eliminar.
@@ -21,7 +21,6 @@ Este proyecto es una tienda en línea llamada AluraGeek. Permite a los usuarios 
 - **CSS**
 - **JavaScript**
 - **My JSON Server**
-- **Node.js**
 
 ## Instalación
 
@@ -29,14 +28,7 @@ Este proyecto es una tienda en línea llamada AluraGeek. Permite a los usuarios 
 ```bash
 https://github.com/IvandevI9/challenge-alurageek.git
 ```
-2. **Instalar Dependencias:** Navega al directorio del proyecto y ejecuta:
-```bash
-npm install
-```
-3. **Iniciar el Proyecto:** Ejecuta el proyecto localmente con:
-```bash
-npm start
-```
+2. Abre el archivo `index.html` en tu navegador web.
 
 ## Créditos
 
