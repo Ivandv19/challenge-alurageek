@@ -9,7 +9,7 @@ async function listaProductos() {
     return conexionConvertida;
   } catch (error) {
     // Maneja cualquier error que ocurra durante la obtención de los productos
-    console.error('Error al obtener los productos:', error);
+    alert('Error al obtener los productos:', error);
     throw error; // Lanza el error para que pueda ser capturado por la función que llama
   }
 }
@@ -34,13 +34,15 @@ async function creaProducto(id, nombre, precio, imagen) {
     // Verifica si la solicitud fue exitosa
     if (!conexion.ok) {
       throw new Error('ha ocurrido un error al enviar el video');
+    } else {
+      alert('Producto creado correctamente');
     }
 
     // Devuelve la respuesta convertida (puede ser útil en algunos casos)
     return conexionConvertida;
   } catch (error) {
     // Maneja cualquier error que ocurra durante la creación del producto
-    console.error('Error al crear el producto:', error);
+    alert('Error al crear el producto:', error);
     throw error;
   }
 }
@@ -58,14 +60,14 @@ async function eliminarProducto(id) {
 
     // Verifica si la solicitud fue exitosa
     if (response.ok) {
-      console.log('Producto eliminado correctamente');
+      alert('Producto eliminado correctamente');
       // Aquí podrías actualizar la interfaz de usuario para reflejar el producto eliminado
     } else {
-      console.error('Error al eliminar el producto:', response.statusText);
+      alert('Error al eliminar el producto:', response.statusText);
     }
   } catch (error) {
     // Maneja cualquier error de red que ocurra durante la eliminación del producto
-    console.error('Error de red:', error);
+    alert('Error de red:', error);
   }
 }
 
