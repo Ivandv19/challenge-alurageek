@@ -351,7 +351,7 @@ footer {
             height: auto;
             display: flex;
             flex-direction: column-reverse;
-            padding: 120px 40px 60px 40px;
+            padding: 120px 15px 60px 15px;
             gap: 70px;
             flex-wrap: nowrap;
             align-content: center;
@@ -387,23 +387,22 @@ footer {
         /* Contenedor de los botones en dispositivos pequeños */
         .botones {
             width: 100%;
-            /* Ocupa todo el ancho disponible */
             height: auto;
-            /* Ajusta la altura automáticamente */
             display: flex;
-            /* Muestra los botones en una fila */
+            flex-direction: column;
+      
         }
 
         /* Botón de enviar en dispositivos pequeños */
         .botón__enviar {
-            width: 50%;
-            /* Ocupa la mitad del ancho disponible */
+            width: 100%;
+
         }
 
         /* Botón de limpiar en dispositivos pequeños */
         .botón__limpiar {
-            width: 50%;
-            /* Ocupa la mitad del ancho disponible */
+            width: 100%;
+
         }
     }
 
