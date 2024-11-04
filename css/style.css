@@ -91,7 +91,7 @@ main {
         height: 50vh;
         display: flex;
         padding: 15px;
-        gap: 115px;
+        gap: 50px;
         overflow: auto;
         flex-direction: column;
         justify-content: space-around;
@@ -102,10 +102,8 @@ main {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
-        padding: 0 0 10px 0;
-        gap: 10px;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
     }
 
     /* Tarjeta de producto */
@@ -328,16 +326,27 @@ footer {
 @media only screen and (max-width: 599px) {
     header {
         display: flex;
+        width: 100%;
+        height: auto;
 
         .header__contenido {
             width: 100%;
-            height: auto;
+            height: 10vw;
             display: flex;
         }
 
         .logo {
             display: flex;
             flex-direction: column-reverse;
+        }
+
+        .logo img {
+            width: 20vw;
+            height: auto;
+        }
+
+        .titulo {
+            font-size: 4vw;
         }
     }
 
@@ -351,8 +360,8 @@ footer {
             height: auto;
             display: flex;
             flex-direction: column-reverse;
-            padding: 120px 15px 60px 15px;
-            gap: 70px;
+            padding: 30vw 2vh 10vw 2vw;
+            gap: 5vh;
             flex-wrap: nowrap;
             align-content: center;
             justify-content: center;
@@ -369,19 +378,59 @@ footer {
         /* Sección para agregar productos en dispositivos pequeños */
         .agregar__productos {
             width: 100%;
+            height: auto;
+            padding: 0;
             /* Ocupa todo el ancho disponible */
         }
 
         /* Formulario en dispositivos pequeños */
         .formulario {
             width: 100%;
-            /* Ocupa todo el ancho disponible */
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            gap: 10px;
+
+        }
+
+        .formulario h1 {
+            font-size: 4vw;
         }
 
         /* Campo del formulario en dispositivos pequeños */
         .formulario__campo {
             width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+
             /* Ocupa todo el ancho disponible */
+        }
+
+        .input__nombre {
+            padding: 0 20px;
+            width: 100%;
+            height: 10vw;
+            font-size: 3vw;
+        }
+
+        .input__precio {
+            padding: 0 20px;
+            width: 100%;
+            height: 10vw;
+            font-size: 3vw;
+        }
+
+        .input__img {
+            padding: 0 20px;
+            width: 100%;
+            height: 10vw;
+            font-size: 3vw;
         }
 
         /* Contenedor de los botones en dispositivos pequeños */
@@ -390,26 +439,83 @@ footer {
             height: auto;
             display: flex;
             flex-direction: column;
-      
+            gap: 5px;
+
         }
 
         /* Botón de enviar en dispositivos pequeños */
         .botón__enviar {
             width: 100%;
+            height: 12vw;
+            font-size: 3vw;
 
         }
 
         /* Botón de limpiar en dispositivos pequeños */
         .botón__limpiar {
             width: 100%;
+            height: 10vw;
+            font-size: 3vw;
 
         }
+
+        .productos h1 {
+            font-size: 4vw;
+        }
+
+        .productos {
+            padding: 0;
+        }
+
+        .productos__container{
+            height: auto;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+            gap: 10px;
+            overflow: hidden;
+        }
+        .productos__line{
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .producto__card p {
+            font-size: 4vw;
+        }
+
     }
 
     footer {
+        width: 100%;
+        height: auto;
+
         .logo {
             display: flex;
             flex-direction: column-reverse;
         }
+
+        .footer__contenido {
+            width: 100%;
+            height: auto;
+            padding: 5vw 2vh;
+        }
+
+        .titulo {
+            font-size: 4vw;
+        }
+
+        .créditos {
+            font-size: 4vw;
+        }
+
+        .logo img {
+            width: 20vw;
+            height: auto;
+        }
+
+        
     }
 }
