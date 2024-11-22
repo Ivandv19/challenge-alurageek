@@ -17,10 +17,10 @@ Este proyecto es una tienda en línea llamada AluraGeek. Permite a los usuarios 
 
 ## Tecnologías Utilizadas
 
-- **HTML**
-- **CSS**
-- **JavaScript**
-- **My JSON Server**
+- HTML
+- CSS
+- JavaScript
+- My JSON Server
 
 ## Instalación
 
